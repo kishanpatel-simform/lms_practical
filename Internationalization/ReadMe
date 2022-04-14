@@ -1,0 +1,10 @@
+Internationalization Assignment
+In following assignemnt, output in console in displayed in multiple languages based on the language set in header.
+Following languages are suuported:
+  English 
+  Gujarati
+  
+  
+  In Assingment, task app is created where:-
+  User Can create his account
+  User can create, update and delete task after login
