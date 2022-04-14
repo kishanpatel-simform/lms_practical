@@ -1,0 +1,48 @@
+body {
+    color: black;
+    font-family: arial;
+    max-width: 650px;
+    margin: 0 auto;
+    padding: 0 16px;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-content {
+    min-height: 120px;
+    padding: 0 16px;
+}
+
+footer {
+    border-top: 1px solid gray;
+    margin-top: 10px;
+    padding: 0 16px;
+}
+
+header {
+    margin-top: 16px;
+}
+
+header a {
+    margin-right: 16px;
+    color: black;
+    text-decoration: none;
+}
+
+img {
+    width: 250px;
+    height: 250px;
+}
+
+input {
+    border: 1px solid grey;
+    padding: 8px;
+}
+
+button {
+    background-color: gray;
+    color: white;
+    border: 1px solid black;
+    cursor: pointer;
+    padding: 8px;
+}
