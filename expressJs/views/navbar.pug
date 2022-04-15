@@ -1,0 +1,8 @@
+div.navbar.navbar-expand.navbar-light.bg-info
+    ul.navbar-nav.mb-2
+        li.nav-item
+            a.nav-link(href="/") Home
+        // looping through an array 
+        each field in fields 
+            li.nav-item  
+                a.nav-link(href="/"+field.name) #{field.name}

@@ -1,0 +1,15 @@
+doctype html 
+html 
+    head 
+        meta(name='viewport', content='width=device-width')
+        link(rel="stylesheet", href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css")
+        title Home Page
+    body 
+        //including a partial
+        include navbar
+ 
+        div.container.text-left.mt-3
+            h1 Welcome to our website, #{user}  
+            div.message
+                p this site is using ExpressJs to server this page.
+                
