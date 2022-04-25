@@ -9,12 +9,19 @@ const i18next = require('i18next')
 const backend = require('i18next-fs-backend')
 const middleware = require('i18next-http-middleware')
 const helmet = require("helmet");
+const swaggerUI = require('swagger-ui-express')
+const YAML = require('yamljs')
+const swaggerJsDocs = YAML.load('./api.yaml')
+
+
 dotenv.config()
 
 
 const app = express()
 
-const port = process.env.PORT
+
+const port = 3000 | process.env.PORT
+app.use('/api-docs', swaggerUI.serve, swaggerUI.setup(swaggerJsDocs))
 app.use(helmet());
 app.use(express.json());
 app.use((req, res, next) => {
