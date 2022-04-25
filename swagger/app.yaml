@@ -1,0 +1,64 @@
+swagger: "2.0"
+info:
+  title: Book Manager APP
+  description: This is Description of API for Book Manager App
+  version: 1.0
+  contact:
+    email: kishan.p@simformsolutions.com
+  license: 
+    name: Apache 2.0
+    url: "http://apache.org/"
+  servers:
+    -url: "http://localhost:3000/"
+    description: "This is Local Server"
+
+          
+  schemes : [http,https]
+
+paths:
+#Author
+  /author/create:
+  # Create Author
+    post: 
+      summary: Create New Authors
+      description: This API creates new Authors
+      produces:
+        - application/json
+      consumes:
+        - application/json
+      parameters:
+        - in: body
+          name: body
+      responses:
+        '200':
+          description: OK
+
+  /author:
+    # Get All Authors
+    get:
+      summary: Returns list of all Authors
+      description: This API returns list of all users      
+      responses:
+        200:
+          description: Success
+          schema:
+            type: Object
+            example: "Users List"
+
+  /books/create:
+  # Add Books
+    post: 
+      summary: Add New Author Book
+      description: This API add author books
+      produces:
+        - application/json
+      consumes:
+        - application/json
+      parameters:
+        - in: body
+          name: body
+          description: body
+          owner: body
+      responses:
+        '200':
+          description: OK
